@@ -1,0 +1,682 @@
+body {
+  background-image: url(https://i.ibb.co/bbCHvtT/fondo.jpg);
+}
+
+body > * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Inicia Header */
+
+.header-container-padre{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color:white;
+}
+
+
+.header-container-padre > *{
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.logo{
+  display:inline-block;
+  background-color: lightgoldenrodyellow;
+}
+
+
+.icono_logo{
+  float: left;
+}
+
+
+.txt_logo{
+  float: right;
+}
+
+
+.navbar{
+  text-align: center;
+  background-color: lightblue;
+}
+
+
+li{
+  display: inline;
+  margin: 5px;
+  padding: 15px;
+  margin: 0px auto;
+}
+
+
+.actions{
+  background-color: lightcoral
+}
+
+
+.actions > * {
+  padding: 15px;
+}
+
+
+/* Inicia Seccion Inicio */
+.seccion_inicio{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 25px;
+  text-align: center;
+  background-color: #F4D8BA;
+}
+
+.container_img_ini{
+  display: block;
+  text-align:center;
+}
+
+
+.txt_inicio{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  padding: 15px;
+  text-align: justify;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.container_txt_ini{
+  display: inline-block;
+  align-content: center;
+}
+
+h1{
+  text-align: center;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+
+.autor_ini{
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container_fondo_video{
+  background-color: lightcoral;
+
+}
+
+
+.video_ini{
+  justify-content: center;
+  margin: auto;
+}
+
+
+/* Inicia Seccion Color */
+.seccion_color{
+  align-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: #D8BFA4;
+}
+
+.txt_scolor{
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 15px;
+  
+}
+
+.container_color{
+ display: grid;
+ grid-template-columns: repeat(10,1fr);
+ align-items: center; 
+ text-align: center;
+}
+
+.container_color > *{
+  display: inline-block;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+
+ 
+/* Inicia Seccion Historia */
+.seccion_historia{
+  display: inline-block;
+  text-align:center;
+  align-items: center;
+  background-color: #F4D8BA;
+  margin: 25px;
+}
+
+.texto_historia{
+  display: inline-block;
+  padding: 5px;
+}
+
+.texto_historia > *{
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tittle_principal_historia{
+  font-size: 35pt;
+  background-color: lightblue;
+}
+
+.subtitulo_historia{
+  font-size: 25pt;
+  background-color: lightgreen;
+}
+
+.container_historia{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.container_historia > * {
+  margin: 15px;
+  padding: 15px;
+}
+
+
+.imgs_antecesor_pitbull{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  background-color: lightgreen;
+}
+
+.img_bulldog{
+  float: left;
+}
+
+.img_terrier{
+  float: right;
+}
+
+.tittle_historia{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.txt_historia{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  font-size: 16pt;
+}
+
+
+/* Inicia Seccion Caracteriscas */
+.seccion_caracteristicas{
+  display: inline-block;
+  text-align:center;
+  align-items: center;
+  background-color: #D8BFA4;
+  margin: 25px;
+}
+
+.tittle_carac{
+  font-size: 20pt;
+  font-weight: bold;
+  font-style: italic
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container_carac{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.container_carac > * {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  padding: 15px;
+}
+
+.item_carac{
+  display: inline-block;
+  background-color: #F4D8BA;
+  text-align: center;
+  margin: 15px;
+}
+
+.icono_item_carac{
+  width: 10%;
+}
+
+.tittle_2_carac{
+  font-size: 15pt;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.txt_carac{
+  text-align: justify;
+}
+
+
+/* Inicia Seccion Datos */
+.seccion_datos_pit{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: #F4D8BA;
+  margin: 25px;
+}
+
+.seccion_datos_pit > *{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding:25px;
+  margin: 25px;
+}
+
+
+.container_carrusel_datos{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin: 25px;
+}
+
+
+.txt_cdatos{
+  font-size: 20pt;
+  color: rgb(33, 146, 191);
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.container_txt_datos{
+  margin: 25px;
+}
+
+.tittle_tdatos{
+  font-size: 15pt;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.txt_datos{
+  text-align: justify;
+  font-size: 15pt;
+}
+
+
+/* Inicia Seccion Mitos */
+.seccion_mitos_pit{
+  justify-content: center;
+  margin: 35px;
+  background-color: #D8BFA4;
+}
+
+.container_padre_mitos{
+ display: inline-block;
+}
+
+.container_padre_mitos > *{
+  align-items: center;
+  justify-content: center;
+}
+
+.tabla_mitos{
+  display: table;
+  margin: auto;
+}
+
+.Respuesta{
+  text-align: center;
+}
+
+
+
+/* Inicia Seccion Adopta */
+
+.secccion_adopta{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  margin: 25px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: url();
+}
+
+.seccion_adopta > * {
+  align-items: center; 
+  text-align: center;
+}
+
+.container_padre_adopta1{
+  display: inline-block;
+  background-image: url(https://image.freepik.com/foto-gratis/fondo-degradado-abstracto-tonos-acuarela_23-2148517820.jpg);
+  text-align: center;
+  color: rgb(87, 87, 87);
+  padding: 15px;
+  margin: 15px;
+}
+
+.txt_c1 > * {
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+
+
+.tittle_adopta_c1{
+  font-size: 45pt;
+}
+
+.subtittle_c1{
+  font-size: 25pt;
+}
+
+
+.container_padre_adopta2{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+}
+
+.logo_sadopta_c2{
+  display:inline-block;
+}
+
+.tittle_adopta_c2{
+  font-size: 35pt;
+  align-items: center;
+}
+
+.txt_c2{
+  font-size: 15pt;
+}
+
+.container_padre_adopta3{
+  display: inline-block;
+  background-color: lightgray;
+  justify-content: center;
+  align-items: center; 
+  margin: 15px;
+}
+
+.container_padre_adopta3 > *{
+  margin: auto;
+  padding: 10px;
+}
+
+.tittle_adopta_c1, .subtittle_c1{
+
+}
+
+.logo_cadopta3{
+  display:flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: lightcoral;
+}
+
+.txt_c3{
+  font-size: 25pt;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+.subtittle_c3{
+  font-size: 15pt;
+  text-align: justify;
+  margin: 15px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+
+.container_padre_adopta4{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 15px;
+  background-color: white;
+  margin: 15px;
+}
+
+.container_padre_adopta4 > *{
+  justify-content: center;
+  align-items: center;
+}
+
+.container_s1_adopta{
+  margin: auto;
+}
+
+.txt_adopta{
+  display: inline-block;
+  align-items: center;
+  margin: auto;
+  background-color:
+}
+
+.txt_adopta_c4{
+  color: lightgray;
+  font-size: 25pt;
+}
+
+.txt_adopta_c4_color{
+  color: lightcoral;
+  font-size: 25pt;
+  font-family: cursive;
+}
+
+
+/* Inicia Seccion Publicidad */
+
+.seccion_publicidad{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: lightblue;
+  margin:25px
+}
+
+
+.seccion_publicidad > *{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.seccion1_pub{
+  display: inline-block;
+}
+
+.txt_spubli1{
+  font-size: 25pt;
+}
+
+.txt_spubli2{
+  font-size: 20pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+.txt_spubli3{
+  font-size: 18pt;
+}
+
+.secc_pub{
+  font-weight: bold;
+  font-style: italic;
+  color: lightcoral;
+}
+
+
+.seccion2_pub{
+  display: inline-block;
+}
+
+.seccion2_pub > *{
+  justify-content: center;
+  align-items: center;
+}
+
+
+#boton_sec2_pub{
+  
+}
+
+.txt_sec2_pub{
+  font-size: 22pt;
+}
+
+.asociacion{
+  display:grid;
+  grid-template-columns: repeat(2,1fr)
+}
+
+
+.asociacion > *{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Inicia Seccion Footer */
+.container_padre_footer{
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: lightpink;
+  margin: 25px;
+}
+
+.container_padre_footer > *{
+  padding: 15px;
+}
+
+.seccion_foo1{
+  display:inline-block;
+}
+
+.seccion_foo1 > *{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tittle_foo1{
+  font-size: 20pt;
+  font-weight: bold;
+  font-style: italic
+}
+
+.txt_f1{
+  text-align: justify;
+}
+
+.seccion_foo2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.seccion_foo2 > *{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.seccion_foo3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: lightcoral;
+}
+
+.seccion_foo3 > *{
+ 
+}
+
+.logo_foo{
+  align-items: left;
+}
+
+.txt_foo_copy{
+  text-align: right;
+}
+
+
+
+
+/* Inicia jquery */
+
+@media (max-width: 1200px) {
+  .logo > *{
+  }
+
+  .seccion_inicio {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .seccion_inicio > * {
+    text-align: center;
+    align-items: center;
+  }
+
+  img {
+    width:100%;
+    min-width:50%;
+  }
+
+  .video_ini{
+    align-content: center;
+  }
+
+  .container_color {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+  }
+
+  .img_scolor{
+    width: 35%;
+  }
+
+
+}
+
+
+@media (max-width: 600px) {
+  .txt_logo{
+    display: none;}
+
+  .seccion_inicio {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  img {
+    width:100%;
+    min-width:35%;
+  }
+}

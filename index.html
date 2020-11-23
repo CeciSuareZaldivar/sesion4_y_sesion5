@@ -7,62 +7,167 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+        <!--Primero va Bootstrap-->
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"/>
+
+        <!--Después estilos-->
         <link rel="stylesheet" href="styles.css">
+
         <title>Pitbulls</title>
     </head>
 
     <body>
+        
 
         <header class="header-container-padre">
 
-                <div class="logo">
-                    
-                    <div class="icono_logo">
-                    <img src="https://i.ibb.co/GtVtQnX/icono-pit.png">
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar navbar-light">
+                <a class="navbar-brand" href="https://cecisuarezaldivar.github.io/sesion4_y_sesion5/">
+                    <div class="logo">
+                                    
+                        <div class="icono_logo">
+                        <img src="https://i.ibb.co/GtVtQnX/icono-pit.png">
+                        </div>
 
-                    <div class="txt_logo">
+                        <div class="txt_logo">
                         <img src="https://i.ibb.co/R7jDCh2/txt-pit.png">
+                        </div>
+
                     </div>
+                </a>
 
-                </div>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <nav class= "navbar">
-                    <ul class="list">
-                    <li><a href="https://es.pitbullsandbullys.com/?amp&fbclid=IwAR0w8DuVZqsJP4uPnrN-9qcsJEiiye0wfc3LbhrG17drBxk4SBKxxzULOCA">Historia</a></li>
-                    <li><a href="https://www.animalfiel.com/perros/pitbull/origen-del-pitbull/?fbclid=IwAR2NaEvTra8sKMJLAgSITv41DiDJzlkDdgY4dqA8tXkdFudHsTYVI9PJJo4">Antepasados</a></li>
-                    <li><a href="https://perrosexpertos.com/pitbull/pitbull-tabla-de-crecimiento-y-etapas/?fbclid=IwAR0SKWsZX7zX4oIs1Ibpmtwwgus7CJQ9qD9vqQXBCmvbRT4eCHehJTQ83Gg">Características</a></li>
-                    <li><a href="https://www.expertoanimal.com/10-mitos-sobre-el-pitbull-21140.html?fbclid=IwAR10yKcXaYRkDhlWP405lJaEV6egzdsjQLR7bfnDYXTjseMLRk6stFZsx08">Mitos</a></li>
-                    <li><a href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull">Rescate Animal</a></li>
-                    </ul>
-                </nav>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <div class= "actions">
-                    <a id="Sign-in" href="/login"> Iniciar Sesión </a>
-                    <button>Start free trial</button>
-                </div>
+                        <ul class="navbar-nav mx-auto">
+
+                            <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        id="navbarDropdown"
+                                        role="button"
+                                        data-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                    Historia
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="https://www.expertoanimal.com/la-historia-del-pit-bull-terrier-americano-21322.html" target="_blank">Antecesor</a>
+                                        <a class="dropdown-item" href="https://www.expertoanimal.com/la-historia-del-pit-bull-terrier-americano-21322.html" target="_blank">Pit Bull Terrier Americano</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="https://www.expertoanimal.com/la-historia-del-pit-bull-terrier-americano-21322.html" target="_blank">Primera Guerra Mundial</a>
+                                        <a class="dropdown-item" href="https://www.expertoanimal.com/la-historia-del-pit-bull-terrier-americano-21322.html" target="_blank">Segunda Guerra Mundial</a>
+                                    </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="https://demascotas.info/razas/perros/bull/pitbull/" target="_blank"
+                                    >Características <span class="sr-only">(current)</span></a
+                            >
+                            </li>
+
+                            <li class="nav-item">
+                            <a class="nav-link" href="https://www.razasdepitbull.com/colores-de-los-pitbulls/" target="_blank"> 
+                                    Colores</a>
+                            </li>
+                                
+                            <li class="nav-item">
+                            <a
+                                    class="nav-link"
+                                    href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull"
+                                    target="_blank"
+                                    tabindex="-1"
+                                    aria-disabled="true">
+                                    Rescate Animal
+                            </a>
+                                
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="https://www.expertoanimal.com/10-mitos-sobre-el-pitbull-21140.html?fbclid=IwAR10yKcXaYRkDhlWP405lJaEV6egzdsjQLR7bfnDYXTjseMLRk6stFZsx08"
+                                            target="_blank"
+                                            id="navbarDropdown"
+                                            role="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false"
+                                        >
+                                            Mitos
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://www.expertoanimal.com/10-mitos-sobre-el-pitbull-21140.html?fbclid=IwAR10yKcXaYRkDhlWP405lJaEV6egzdsjQLR7bfnDYXTjseMLRk6stFZsx08" target="_blank">Todos los Pitbulls son agresivos</a>
+                                            <a class="dropdown-item" href="https://www.expertoanimal.com/10-mitos-sobre-el-pitbull-21140.html?fbclid=IwAR10yKcXaYRkDhlWP405lJaEV6egzdsjQLR7bfnDYXTjseMLRk6stFZsx08" target="_blank">Sus mandíbulas se bloquean al morder</a>
+                                        </div>
+                            </li>
+
+                        </ul>
+
+                        <form class="form-inline my-2 my-lg-0">
+                                <input
+                                class="form-control mr-sm-2"
+                                type="search"
+                                placeholder="Search"
+                                aria-label="Search"
+                                />
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                Search
+                                </button>
+                        </form>
+                    </div>
+            </nav>
 
         </header>
 
 
         <section class="seccion_inicio">
 
-            <div class="txt_inicio">
+            <div class="container_padre_inicio">
 
-                <div class="container_img_ini">
-                    <img id="img_ini" src="https://i.ibb.co/rt8mq2f/pitbull-acuarela.png" width="75%">
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+
+                    <div class="col-lg-8">
+                        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+                            <div class="col"> 
+                                <img id="img_ini" src="https://i.ibb.co/rt8mq2f/pitbull-acuarela.png" width="95%">
+                            </div>
+
+                            <div class="col container_txt_inicio"> 
+                                <h1>Pitbulls</h1>
+                                <p class="txt_ini">"No hay perros agresivos, sino humanos ignorantes"</p>
+                                <p class="autor_ini">César Millan</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/njGn4gRUkF0" allowfullscreen></iframe>
+                    </div>
+
                 </div>
 
-                <div class="container_txt_ini">
-                    <h1>Pitbulls</h1>
-                    <p class="txt_ini">"No hay perros agresivos, sino humanos ignorantes"</p>
-                    <p class="autor_ini">César Millan</p>
-                </div>
-
-            </div>
-
-            <div class="video_ini">
-                <iframe width="634" height="360" src="https://www.youtube.com/embed/njGn4gRUkF0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
         </section>
@@ -70,322 +175,401 @@
 
         <section class="seccion_color">
 
-            <p class="txt_scolor">Definiendo los distintos colores del American Pitbull Terrier</p>
+            <p class="tittle_color">Definiendo los distintos colores del American Pitbull Terrier</p>
 
             <div class="container_color">
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/hRkdCBp/pit-white.png">
-                    <p class="txt_scolor">White</p>
-                </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/N6WbFWY/pit-black.png">
-                    <p class="txt_scolor">Black</p>
-                </div>
+                <div class="row row-cols-5 row-cols-lg-10 container_colores">
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/3Txffn9/pit-blue.png" alt="pit-blue">
-                    <p class="txt_scolor">Blue</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/hRkdCBp/pit-white.png" class="card-img-top" alt="...">
+                        <h5 class="">White</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/FVLjHJf/pit-blue-brindle.png">
-                    <p class="txt_scolor">Blue Brindle</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/N6WbFWY/pit-black.png" class="card-img-top" alt="...">
+                        <h5 class="">Black</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/hW4sYgZ/pit-brindle.png">
-                    <p class="txt_scolor">Brindle</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/3Txffn9/pit-blue.png" class="card-img-top" alt="...">
+                        <h5 class="">Blue</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/HrjQWWS/pit-red-b.png">
-                    <p class="txt_scolor">Red Brindle</p>
-                </div>
-                
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/HFVBBdw/pit-tri-color.png">
-                    <p class="txt_scolor">Tricolor</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/FVLjHJf/pit-blue-brindle.png" class="card-img-top" alt="...">
+                        <h5 class="">Blue Brindle</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/zV9VKKK/pit-fawn.png">
-                    <p class="txt_scolor">Fawn</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/hW4sYgZ/pit-brindle.png" class="card-img-top" alt="...">
+                        <h5 class="">Brindle</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/XSWXMd6/pit-red.png">
-                    <p class="txt_scolor">Red</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/HrjQWWS/pit-red-b.png" class="card-img-top" alt="...">
+                        <h5 class="">Red Brindle</h5>
+                    </div>
 
-                <div class="item_color">
-                    <img class="img_scolor" src="https://i.ibb.co/vHhRbX1/pit-buckskin.png">
-                    <p class="txt_scolor">Buckskin</p>
-                </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/HFVBBdw/pit-tri-color.png" class="card-img-top" alt="...">
+                        <h5 class="">Tricolor</h5>
+                    </div>
 
-            </div>
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/zV9VKKK/pit-fawn.png" class="card-img-top" alt="...">
+                        <h5 class="">Fawn</h5>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/XSWXMd6/pit-red.png" class="card-img-top" alt="...">
+                        <h5 class="">Red</h5>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <img src="https://i.ibb.co/vHhRbX1/pit-buckskin.png" class="card-img-top" alt="...">
+                        <h5 class="">Buckskin</h5>
+                    </div>
+
+
+                </div>
+                    
+                    
+            </div> 
 
         </section>
-
+           
+        
 
         <section class="seccion_historia">
             <div class="texto_historia">
-                <p class="tittle_principal_historia">¿Cuál es el origen de los Pitbull?</p>
-                <p class="subtitulo_historia">Un “perro niñera”</p>
+                <h2 class="tittle_historia">¿Cuál es el origen de los Pitbull?</h2>
             </div>
 
-            <div class="container_historia">
+            <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 container_hijo_historia">
 
-                <div class="item_historia">
-                    <div class="imgs_antecesor_pitbull">
-                        <div>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/71X7iJ6xYZL._AC_SL1349_.jpg" width="80%">
-                            <p>Bulldog</p>
-                         </div>
+                <div class="col">
+                    <div class="card_historia">
+                        <div class="card-img-top2">
+                            <div class="container-padre-img-card">
+                            
+                                    <div class="container-hijo2-img-card">
+                                        <img class= "img_bulldog" src="https://images-na.ssl-images-amazon.com/images/I/71X7iJ6xYZL._AC_SL1349_.jpg" width="80%">
+                                        <p>Bulldog</p>
+                                    </div>
 
-                         <div>
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/61D2Ws6AsaL._AC_SX425_.jpg" width="80%">
-                            <p>Terrier</p>
+                                    <div class="container-hijo2-img-card">
+                                        <img class= "img_terrier" src="https://images-na.ssl-images-amazon.com/images/I/61D2Ws6AsaL._AC_SX425_.jpg" width="80%">
+                                        <p>Terrier</p>
+                                    </div>
+        
+                            </div>
                         </div>
-
+                        <div class="container_txt_historia">
+                            <h5 class="card-title-historia">¿Quiénes fueron sus antecesores?</h5>
+                            <p class="card-text">Se dice que el pitbull desciende de las razas bulldog y terrier. <br> El cruce de ambos perros dio lugar a un nuevo ejemplar con la fuerza y poderío del bulldog, así como la velocidad y agilidad de los terriers.</p>
+                        </div>
                     </div>
-                    <p class="tittle_historia">¿Quiénes fueron sus antecesores?</p>
-                    <p class="txt_historia">Se dice que el pitbull desciende de las razas bulldog y terrier. El cruce de ambos perros dio lugar a un nuevo ejemplar con la fuerza y poderío del bulldog, así como la velocidad y agilidad de los terriers.</p>
                 </div>
 
-                <div class="item_historia">
-                    <img src="https://i.pinimg.com/originals/61/da/ec/61daec2aadce85a610ebfc18c1e3ffe9.jpg" width="50%">
-                    <p class="tittle_historia">¿Cómo y dónde nació la raza pitbull?</p>
-                    <p class="txt_historia">El origen de los pitbulls se remonta a principios del siglo XIX y se ubica en diferentes regiones de Inglaterra, Irlanda y Escocia. Estos perros fueron criados a partir del antiguo bulldog inglés, raza que por aquel entonces había ganado popularidad en un deporte de sangre conocido como “ceba de toros”.</p>
+                <div class="col">
+                    <div class="card_historia">
+                    <img class="card-img-top2" src="https://i.pinimg.com/originals/61/da/ec/61daec2aadce85a610ebfc18c1e3ffe9.jpg" width="50%" class="card-img-top" alt="...">
+                    <div class="container_txt_historia">
+                        <h5 class="card-title-historia">¿Cómo y dónde nació la raza pitbull?</h5>
+                        <p class="card-text">El origen de los pitbulls se remonta a principios del siglo XIX y se ubica en diferentes regiones de Inglaterra, Irlanda y Escocia.<br>Estos perros fueron criados a partir del antiguo bulldog inglés, raza que por aquel entonces había ganado popularidad en un deporte de sangre conocido como “ceba de toros”.</p>
+                    </div>
+                    </div>
                 </div>
 
-
-                <div class="item_historia">
-                    <img src="https://i.ibb.co/3csmdhQ/pit-ninera.jpg" width="46%">
-                    <p class="tittle_historia">Un “perro niñera"</p>
-                    <p class="txt_historia">A principios de 1900, el pitbull se empezó a conocer como “perro niñera” debido a su comportamiento leal, cariñoso, orientado a la familia y especialmente paciente con los niños. Se cuenta que en la época muchos padres solían dejar a sus hijos solos en casa bajo la protección de un pitbull.
-                        Sin embargo, la mayoría de las fuentes e historiadores aseguran que no existe evidencia para respaldar dicha idea. Al parecer, esto no es más que un mito.</p>
-                </div>
-                
+                <div class="col">
+                    <div class="card_historia">
+                    <img class="card-img-top2" src="https://i.ibb.co/3csmdhQ/pit-ninera.jpg" width="47%" class="card-img-top" alt="...">
+                    <div class="container_txt_historia">
+                        <h5 class="card-title-historia">Un “perro niñera"</h5>
+                        <p class="card-text">A principios de 1900, el pitbull se empezó a conocer como “perro niñera” debido a su comportamiento leal, cariñoso, orientado a la familia y especialmente paciente con los niños. Se cuenta que en la época muchos padres solían dejar a sus hijos solos en casa bajo la protección de un pitbull.
+                            Sin embargo, la mayoría de las fuentes e historiadores aseguran que no existe evidencia para respaldar dicha idea. Al parecer, esto no es más que un mito.</p>
+                    </div>
+                    </div>
+                </div>    
+            
             </div>
 
         </section>
 
 
         <section class="seccion_caracteristicas">
-            <p class="tittle_carac">Características</p>
+                <p class="tittle_carac">Características</p>
 
-            <div class="container_carac"> 
-                <div class="item_carac"> 
-                    <img class="icono_item_carac" src="https://i.ibb.co/vspRHHN/icono-pitbull.png">
-                    <p class="tittle_2_carac">Apariencia Física</p>
-                    <p class="txt_carac">De acuerdo con el estándar de la raza aceptado por el United Kennel Club (UKC). el perro pitbull debe tener un cuerpo ligeramente más largo que alto, con pecho profundo y nunca debe tener apariencia gruesa o excesivamente musculosa.</p>
-                </div>
+                <div class="container_padre_carac">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 container_hijo_carac">
 
-                <div class="item_carac"> 
-                    <img class="icono_item_carac" src="https://www.flaticon.es/svg/static/icons/svg/3062/3062575.svg">
-                    <p class="tittle_2_carac">Carácter</p>
-                    <p class="txt_carac">Se caracteriza por la estabilidad emocional, tolerancia con los niños, la afectuosidad con la familia, la no sociabilidad con los extraños que considere peligrosos, la aptitud para la guardia y la dominancia con otros perros.</p>
-                </div>
+                        <div class="col item-carac">
+                            <img class="img_carac" src="https://i.ibb.co/vspRHHN/icono-pitbull.png" class="card-img-top" alt="...">
+                            <h5 class="card-title-carac">Apariencia Física</h5>
+                            <p class="card-text">De acuerdo con el estándar de la raza aceptado por el United Kennel Club (UKC). el perro pitbull debe tener un cuerpo ligeramente más largo que alto, con pecho profundo y nunca debe tener apariencia gruesa o excesivamente musculosa.</p>
+                        </div>
+                       
+                        <div class="col item-carac">
+                            <img class="img_carac" src="https://www.flaticon.es/svg/static/icons/svg/3062/3062575.svg" class="card-img-top" alt="...">
+                            <h5 class="card-title-carac">Carácter</h5>
+                            <p class="card-text">Se caracteriza por la estabilidad emocional, tolerancia con los niños, la afectuosidad con la familia, la no sociabilidad con los extraños que considere peligrosos, la aptitud para la guardia y la dominancia con otros perros.</p>
+                        </div>
 
-                <div class="item_carac"> 
-                    <img class="icono_item_carac" src="https://www.flaticon.es/svg/static/icons/svg/3744/3744548.svg">
-                    <p class="tittle_2_carac">Cuidados</p>
-                    <p class="txt_carac">No basta con darle de comer y sacarlo a pasear, al igual que nosotros, nuestro Pitbull necesitará de ciertos cuidados de mantenimiento para limpiarsus orejas, mantener sus uñas con un tamaño adecuado y evitar que tenga problemas dentales.</p>
-                </div>
+                        <div class="col item-carac">
+                            <img class="img_carac" src="https://www.flaticon.es/svg/static/icons/svg/3744/3744548.svg" class="card-img-top" alt="...">
+                            <h5 class="card-title-carac">Cuidados</h5>
+                            <p class="card-text">No basta con darle de comer y sacarlo a pasear, al igual que nosotros, nuestro Pitbull necesitará de ciertos cuidados de mantenimiento para limpiarsus orejas, mantener sus uñas con un tamaño adecuado y evitar que tenga problemas dentales.</p>
+                        </div>
 
-                <div class="item_carac"> 
-                    <img class="icono_item_carac" src="https://i.ibb.co/ngNJDz4/icono-edu-pitbull.png">
-                    <p class="tittle_2_carac">Educación</p>
-                    <p class="txt_carac">Son perros muy fuertes y con mucho carácter, que necesitan una educación mucho más intensa y constante que la de cualquier otro perro. Con una educación decuada pueden convertirse en buenos perros, pero siendo completamente sinceros... pocas personas saben educar correctamente a un Pitbull</p>
+                        <div class="col item-carac">
+                            <img class="img_carac" src="https://i.ibb.co/ngNJDz4/icono-edu-pitbull.png" class="card-img-top" alt="...">
+                            <h5 class="card-title-carac">Educación</h5>
+                            <p class="card-text">Son perros muy fuertes y con mucho carácter, que necesitan una educación mucho más intensa y constante que la de cualquier otro perro. Con una educación decuada pueden convertirse en buenos perros, pero siendo completamente sinceros... <i>pocas personas saben educar correctamente a un Pitbull</i></p>
+                        </div>
+
+                    </div>
+
                 </div>
-            </div>
 
         </section>
 
 
         <section class="seccion_datos_pit">
 
-            <div class="container_carrusel_datos">
+            <div class="row row-cols-1 row-cols-md-1  row-cols-lg-2 container_datos_pit">
+                <div class="col-lg-3">
+                    <div class="container_card">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/originals/ae/87/6d/ae876d6f349a72fdda5af7631ca3f5a6.jpg" class="d-block w-100 img_datos" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/LCHSF0k/pit-art1.jpg" class="d-block w-100 img_datos" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/3vBj5rx/pit-art2.jpg" alt="pit-art2" class="d-block w-100 img_datos" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.ibb.co/PDM3B9m/pit-art3.jpg" class="d-block w-100 img_datos" alt="...">
+                        </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                        </div> 
+                        <div class="card-body-datos">
+                            <p class="txt_s1_datos1">Las personas <b>cobardes</b> nos matan,</p> 
+                            <p class="txt_s1_datos2">las personas <b>valientes</b> luchan por nosotros.</p>
+                            <p class="txt_s1_datos3"> ¿Cuál eres tú?</p>
+                        </div>   
+                    </div>
+                </div>
 
-                <div>
-                 <img src="https://i.pinimg.com/originals/ae/87/6d/ae876d6f349a72fdda5af7631ca3f5a6.jpg" width="75%">
-                 </div>
-                    
-                 <div>
-                 <p class="txt_cdatos">Las personas cobardes nos matan, las personas valientes luchan por nosotros. <br> <br> <br> ¿Cuál eres tú?</p>
-                 </div>
+                <div class="col-lg-6 offset-1">
+                    <div class="container_txt_datos">
+                        <p class="tittle_datos">¿Cómo mantener a tu pitbull saludable?</p>
+                        <p class="txt_s2_datos">Para poder disfrutar de un pitbull sano, desde el primer momento debes enseñarle a tener disciplina. Así conseguirás que tu perro no sea de los perros rebeldes que son muy complicados de controlar.
+                                    Debes saber que el pitbull es un animal que debe hacer ejercicio todos los días para sentirse a gusto. Pero ten en cuenta que el ejercicio que debe realizar no solo deberás ser físico, sino que también es importante que haga ejercicio mental.
+                                    Para mantener al animal bien, es importante el cepillado. El cepillado lo podrás realizar de manera sencilla tu mismo, gracias a que cuenta con un pelo muy corto. Estos momentos son muy agradables para el perro, a la vez que se ha demostrado que también ayuda a crear lazos emocionales más fuertes entre el dueño y la mascota.
+                                    A la hora de bañar al pitbull, debes tener en cuenta que no es un animal que deba bañarse todos los días. Solo lo deberás bañar cuando se ensucien o cuando comiences a ver que tiene un olor fuerte. Es decir, no cometas el error de meterlo todos los días en la bañera porque esto no te lo agradecerá.
+                                    Es importante que cuides de sus dientes para que pueda disfrutar de una buena salud dental. El perro querrá morder de todo, por lo que debes evitar que el mismo muerda piedras que puedan estropear o dañar sus dientes. Para conseguirlo, es importante que le des objetos blandos para que muerda y quite el ansia de morder. Puede ser una buena opción que le compres juguetes especiales para que pueda morder cuando tenga la necesidad de morder.
+                                    Como puedes ver, los cuidados del pitbull son muy sencillos. Pero antes de adquirir este tipo de perro debes estar seguro o segura de que estás dispuesto a cuidarlo al máximo y estar a su lado durante toda su vida. Si no lo tienes claro, lo mejor es que no te hagas con este tipo de mascota.</p>
+                    </div>
+
+                </div>
+
             </div>
 
-
-            <div class="container_txt_datos">
-             <p class="tittle_tdatos">¿Cómo mantener a tu pitbull saludable?</p>
-             <p class="txt_tdatos">Para poder disfrutar de un pitbull sano, desde el primer momento debes enseñarle a tener disciplina. Así conseguirás que tu perro no sea de los perros rebeldes que son muy complicados de controlar.
-                        Debes saber que el pitbull es un animal que debe hacer ejercicio todos los días para sentirse a gusto. Pero ten en cuenta que el ejercicio que debe realizar no solo deberás ser físico, sino que también es importante que haga ejercicio mental.
-                        Para mantener al animal bien, es importante el cepillado. El cepillado lo podrás realizar de manera sencilla tu mismo, gracias a que cuenta con un pelo muy corto. Estos momentos son muy agradables para el perro, a la vez que se ha demostrado que también ayuda a crear lazos emocionales más fuertes entre el dueño y la mascota.
-                        A la hora de bañar al pitbull, debes tener en cuenta que no es un animal que deba bañarse todos los días. Solo lo deberás bañar cuando se ensucien o cuando comiences a ver que tiene un olor fuerte. Es decir, no cometas el error de meterlo todos los días en la bañera porque esto no te lo agradecerá.
-                        Es importante que cuides de sus dientes para que pueda disfrutar de una buena salud dental. El perro querrá morder de todo, por lo que debes evitar que el mismo muerda piedras que puedan estropear o dañar sus dientes. Para conseguirlo, es importante que le des objetos blandos para que muerda y quite el ansia de morder. Puede ser una buena opción que le compres juguetes especiales para que pueda morder cuando tenga la necesidad de morder.
-                        Como puedes ver, los cuidados del pitbull son muy sencillos. Pero antes de adquirir este tipo de perro debes estar seguro o segura de que estás dispuesto a cuidarlo al máximo y estar a su lado durante toda su vida. Si no lo tienes claro, lo mejor es que no te hagas con este tipo de mascota.</p>
-
-            </div>
-
+            
         </section>
 
 
 
         <section class="seccion_mitos_pit">
 
-            <div class="container_padre_mitos">
-                <table border="1" class="tabla_mitos">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
                     <tr>
-                        <td>Mito</td>
-                        <td>Verdadero</td>
-                        <td>Falso</td>
+                        <th scope="col">Mito</th>
+                        <th scope="col">Verdadero</th>
+                        <th scope="col">Falso</th>
                     </tr>
-
+                    </thead>
+                    <tbody>
                     <tr>
                         <td>Todos los pitbull son agresivos y peligrosos</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Las mandíbulas del pitbull se bloquean al morder</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
-                    <tr>
+                    <tr></tr>
                         <td>El cerebro del pitbull crece más que lo que permite su cráneo</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>La mordida del pitbull supera las 1600 psi (libras por pulgada cuadrada)</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>El temperamento del pitbull es inestable e impredecible</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Por su historia como perro de pelea, el pitbull es agresivo con la gente</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Un pitbull que ataca a otros perros o a otros animales luego será agresivo con la gente</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Los pitbull no sienten dolor cuando pelean</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Todos los pitbull pelean con otros perros</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
                     <tr>
                         <td>Un pitbull agresivo no se puede rehabilitar</td>
-                        <td class="Respuesta"></td>
-                        <td class="Respuesta">☒</td>
+                        <td></td>
+                        <td class="falso"><img class="img_false" src="https://www.flaticon.es/svg/static/icons/svg/16/16187.svg"></td>
                     </tr>
-
+                    </tbody>
                 </table>
-                <!-- ☑ -->
 
-
-            </div>
-
-
-            
         </section>
 
 
 
         <section class="secccion_adopta">
+           
+            <div class="container_adopta">
 
-            <div class="container_padre_adopta1">
-                <div class="txt_c1">
-                    <p class="tittle_adopta_c1">Pitbulls</p>
-                    <p class="subtittle_c1">Una raza incompredida</p> 
-                </div>
-             </div>
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
 
-            <div class="container_padre_adopta2">
-
-                <div class="seccion_1_adopta2">
-                    <div class="logo_sadopta_c2">
-                        
-                        <div class="icono_logo">
-                        <img src="https://i.ibb.co/GtVtQnX/icono-pit.png" width="45%">
+                    <div class="col-md-auto">
+                        <div class="card">
+                            <img src="https://i.ibb.co/C9FDR5p/naranja-tranparencia.jpg" class="card-img" alt="..." width="50%">
+                            <div class="card-img-overlay">
+                                <div class="card-body">
+                                    <div class="row row-cols-2">
+                                        <div class="col card-txt">
+                                            <h5 class="card-title">Pitbulls</h5>
+                                            <p class="card-text-1">Una raza incompredida</p>
+                                        </div>
+                                        <div class="col container_img_adopta">
+                                            <div class="row row-cols-2 row-cols-md-2 row-cols-lg-2 container-card-img">
+                                                <div class="col">
+                                                    <img class="img_adop_c1" src="https://i.ibb.co/k36fMSw/pit-1.jpg">
+                                                </div>
+                                                <div class="col">
+                                                    <img class="img_adop_c1" src="https://i.ibb.co/s2pLqXC/pit-2.jpg">
+                                                </div>
+                                                <div class="col">
+                                                    <img class="img_adop_c1" src="https://i.ibb.co/4KVq5h9/pit-3.jpg">
+                                                </div>
+                                                <div class="col">
+                                                    <img class="img_adop_c1" src="https://i.ibb.co/4RJgsGm/pit-4.jpg">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-
-                        <div class="txt_logo">
-                            <img src="https://i.ibb.co/R7jDCh2/txt-pit.png" width="45%">
-                        </div>
-
-                    </div>
-                    
-                    <p class="tittle_adopta_c2">Pitbulls</p>
-                    <p class="txt_c2">Cambia la historia. <br> Dale una oportunidad a un pitbull</p>   
-                    <p class="link_adopta">Da click <a href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull">aquí</a> y adopta</p>
-                </div>      
-                
-                <div class="seccion_2_adopta2">
-                    <img src="https://i.pinimg.com/736x/f1/16/e7/f116e722683e15a79d0bf9b1bf701662.jpg" width="70%">
-                </div>
-            </div>
-
-
-            <div class="container_padre_adopta3">
-                <div class="logo_cadopta3">
-                    
-                    <div class="icono_logo">
-                    <img src="https://i.ibb.co/GtVtQnX/icono-pit.png" width="65%">
-                    </div>
-
-                    <div class="txt_logo">
-                        <img src="https://i.ibb.co/R7jDCh2/txt-pit.png" width="65%">
-                    </div>
-
-                </div>
-                <p class="txt_c3">No juzgues a un libro por su portada</p>
-                <p class="subtittle_c3">Denominados como "perros potencialmente peligrosos" son los más perjudicados a la hora de buscar un hogar acogedor</p>                
-            </div>
-
-            <div class="container_padre_adopta4">
-            
-                <div class="container_s1_adopta">
-                <img src="https://i.ibb.co/hBJrj3S/pit-happy.jpg" width="70%">
-                </div>
-
-                <div class="container_s2_adopta">
-                    <div class="logo">
-                        <div class="icono_logo">
-                        <img src="https://i.ibb.co/GtVtQnX/icono-pit.png">
                         </div>
                     </div>
-                    <div class="txt_adopta">
-                        <p class="txt_adopta_c4">Una raza maltratada y despreciada que...</p>
-                        <p class="txt_adopta_c4_color">Aún muestra amor en su mirada</p>
-                    </div>  
-                    <p class="link_c4"></p> 
-                </div>  
-                             
+
+                    <div class="col-md-auto">
+                            <div class="card">
+                                <img src="https://i.ibb.co/nRN4MBC/amarillo-tranparencia.jpg" class="card-img" alt="...">
+                                <div class="card-img-overlay">
+                                    <div class="card-body">
+                                        <div class="row row-cols-2">
+                                            <div class="col">
+                                                <div class="col logo-adopta">
+                                                    <img src="https://i.ibb.co/GtVtQnX/icono-pit.png" width=15%">
+                                                    <img src="https://i.ibb.co/R7jDCh2/txt-pit.png" width="25%">
+                                                </div>
+                                                <h5 class="card-title">Pitbulls</h5>
+                                                <p class="card-text-2">Cambia la historia. <br> Dale una oportunidad a un pitbull
+                                                <p class="card-text-2">Da click <a href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull">aquí</a> y adopta </p>
+                                            </div>
+                                            <div class="col">
+                                                <img class="img_adopta2" src="https://i.ibb.co/4ZHPBQb/pit.jpg" class="card-img" alt="...">     
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+    
+                    <div class="col-md-auto">
+                    <div class="card">
+                        <img src="https://i.ibb.co/Q9Rmzk8/rosa-tranparencia.jpg" class="card-img" alt="..." width="50%">
+                        <div class="card-img-overlay">
+                            <div class="card-body">
+                                <p class="card-title-adopta">No juzgues a un libro por su portada</p>
+                                <div class="row row-cols-2">
+                                    <div class="col-6">
+                                        <img class="img_adopta3" src="https://i.ibb.co/rm0rb2Z/libro-pit.png">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="card-text-3">Denominados como <i>"perros potencialmente peligrosos"</i> son los más perjudicados a la hora de buscar un hogar acogedor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-auto">
+                        <div class="card">
+                            <img src="https://i.ibb.co/n77BmmJ/azul-tranparencia.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <div class="card-body">
+                                    <div class="row row-cols-2">
+                                        <div class="col">
+                                            <p class="card-text">Una raza maltratada y despreciada que...</p>
+                                            <p class="card-text-4">Aún muestra amor en su mirada</p>
+                                        </div>
+                                        <div class="col">
+                                            <img class="img_adopta4" src="https://i.ibb.co/hBJrj3S/pit-happy.jpg" width="70%">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
@@ -393,26 +577,36 @@
 
         <section class="seccion_publicidad">
 
-            <div class="seccion1_pub">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
 
-                <p class="txt_spubli1">Porque los verdaderos amigos no se compran. ¡Adopta un pitbull!</p>
+                    <div class="col txt_publis1">
+                        <p class="txt_publi1">Porque los verdaderos amigos no se compran...</p> <br> 
+                        <p class="txt_pub_color1">¡Adopta un pitbull!</p>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                            <img class="img_publi1" src="https://i.ibb.co/vQMtHC3/pit-acua.jpg" width="70%">
+                            </div>
+                            <div class="col">
+                                <p class="txt_publi2">¿Quieres saber cómo ser un dueño responsable?</p><br>
+                                <p class="txt_publi3">Da click <a class="txt_pub_color2" href="">aquí</a> para conocer más</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <p class="txt_spubli2">¿Quieres saber cómo ser un dueño responsable?</p><br>
-                <p class="txt_spubli3">Da click <a class="secc_pub" href="">aquí</a> para conocer más</p>
-
-            </div>
-
-
-            <div class="seccion2_pub">
-            
-                <p class="txt_sec2_pub">Ayudanos a cambiar su vida.</p>
-
-                <div class="asociacion">
-                    <p class="txt_sec2_pub">Adopta y salva una vida. <br> Casi 300 Animales buscan un hogar.</p>
-                    <img src="https://i.ibb.co/nkFvGWD/adopta.png" width="45%">
-                    <button id="boton_sec2_pub"><a class="link_seccion2" href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull" target="_blank">¿Dónde puedo adoptar?</a></button>
-                </div>
-                    
+                    <div class="col txt_publis1">
+                        <p class="tittle_pub">Ayudanos a cambiar su vida.</p>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                                <p class="txt_publi4">Adopta y salva una vida. <br> Casi 300 Animales buscan un hogar.</p>
+                                <button id="boton__pub"><a class="link_seccion2" href="http://adoptaysalvaunavida.org/?phort_post_category=pitbull" target="_blank">¿Dónde puedo adoptar?</a></button>
+                            </div>
+                            <div class="col">
+                                <img class="img_publi2" src="https://i.ibb.co/nkFvGWD/adopta.png" width="75%">
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
             </div>
 
         </section>
@@ -420,88 +614,112 @@
 
 
         <footer class="container_padre_footer">
-            <div class="container_hijo">
-                <div class="seccion_foo1">
+
+
+            <div class="row row-cols-1 row-cols-lg-2 footer_seccion1">
+                <div class="col newsletter">
+
                     <p class="tittle_sf1">Suscríbete a nuestro Newsletter</p>
                     <form>
-                        <p  align="center" class="txt_sf1">Llena el formulario para <b>recibir semanalmente nuestros artículos y podcast</b>.</p>
-                        <div align="center">
-                        <input type="email" placeholder="Escribe tu Email" />
-                        <input type="name" placeholder="Escribe tu Nombre" />
-                        <button id="boton_footer">Suscribirse</button> 
-                        <p  align="center" class="txt"><b>¡Te ayudamos a ser un dueño responsable!</b></p>
+                        <p class="txt_sf1">Llena el formulario para <b>recibir semanalmente nuestros artículos y podcast</b>.</p>
+                        <div class="Suscribete">
+                            <input type="email" placeholder="Escribe tu Email" />
+                            <input type="name" placeholder="Escribe tu Nombre" />
+                            <button id="boton_footer">Suscribirse</button> 
                         </div>
                     </form>
+                    <p class="txt_sf1"><b>¡Te ayudamos a ser un dueño responsable!</b></p>
                 </div>
 
-                <div class="seccion_foo2">
+                <div class="col menu_foo">
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <p class="tittle_sf2">Pitbull</p>
+                            <ul>
+                                <li>Inicio</li>
+                                <li>Historia</li>
+                                <li>Características</li>
+                            </ul>
+                        </div>
 
-                    <div class="sf2_item">
-                        <p class="tittle_sf2">Pitbull</p>
-                        <ul>
-                            <li>Inicio</li>
-                            <li>Historia</li>
-                            <li>Características</li>
-                        </ul>
+                        <div class="col">
+                            <p class="tittle_sf2">Cuidados</p>
+                            <ul>
+                                <li>Limpieza</li>
+                                <li>Higiene Bucal</li>
+                                <li>Cepillado</li>
+                            </ul>
+                        </div>
+
+                        <div class="col">
+                            <p class="tittle_sf2">Colores</p>
+                            <ul>
+                                <li>Blue</li>
+                                <li>Red noise</li>
+                                <li>White</li>
+                            </ul>
+                        </div>
+
                     </div>
 
-
-                    <div class="sf2_item">
-                        <p class="tittle_sf2">Cuidados</p>
-                        <ul>
-                            <li>Limpieza</li>
-                            <li>Higiene Bucal</li>
-                            <li>Cepillado</li>
-                        </ul>
-                    </div>
-
-
-                    <div class="sf2_item">
-                        <p class="tittle_sf2">Colores</p>
-                        <ul>
-                            <li>Blue</li>
-                            <li>Red noise</li>
-                            <li>White</li>
-                        </ul>
-                    </div>
-
-                    
-                </div>
-            </div>
-
-            <div class="seccion_foo3">
-
-                <div class="logo_foo">
-                    
-                    <div class="icono_logo">
-                    <img src="https://i.ibb.co/GtVtQnX/icono-pit.png" width="35%">
-                    </div>
-
-                    <div class="txt_logo">
-                        <img src="https://i.ibb.co/R7jDCh2/txt-pit.png" width="55%">
-                    </div>
-
-                </div>
-
-                <div class="Redes_Sociales">
-                    <div><img src="data:image/png;base64,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" width="35%"></div>
-                    <div><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAulBMVEX///8bsukbsuj//v/8//////0bsuv2///6///v///z///t///q//8AqN3u//8RruZDsNcYqdq15/dhvNvj/P46sdxsxePT9PpPud4HreLg//+M1e4sr93b+v2n4/KQ1+ug2+57yOPK8/2j4/PX7/Wc0N9Nud7R9fnK7fVtxuKR1Oe66fSAz+chptSw6feAzOdq3PnW/f9rvtm/8PdIuOKBzu1FpcWX3eyW5e5tzuS04e6F2emm5ffF4eqDK/8hAAAKxElEQVR4nO2diXajOhKGAYPAiyIUA7ZivPeN43jJTcc9menJff/XGklgjB28SgJPH33n9MnSMeh3SVWlkpANQ6PRaDQajUaj0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Gs0pnPTfH8WeoFpVrdAI4VArei7Hs+lPf1gvdQyvNVmPxj/bjHFvPWm5f9BIdAy3/xWFGCIEgGmaACCIw/Z09geITDxKcx2tIKLamDyGxWSaEHenwZFXJS9s/LDlNkXFG+oYrdEGIrMIC8GwV6iR4310/1LQIt4qYam7C3jrDSyUl0LCaaPwEt4swrgjpzkJUkNUbful38bbzgmKJQL4PNu7PxfE9BH005XZKH7lwYuca9WS9noDnPRPAIoVWuy3FhztK7Hri2dITAt/yGlNjlYY92nzZHWLxhKmbqV4GGZf4byVe1XnNeR+yWwX918RphB1W9L8TbOdG4GFFsx+Sbr0naWj1653Rl1Ckr+WbEKmq7Wh94rqkq7YbKPUUKB4CNL/AlZiSAv5faPxtOj5BKFEH0BzjzVL2hvOLrSG9OJkXndyv7v5es02OeZcCgmX/oqgXO9dPRlSFVLsiPd++Oam173h4tmb04jIFfK40bamThTC9W0tOMXTKrkD7N2eTW1fZy/hUQ9TDP9zwH0r+44sd/5VWpLOO+lWoiCLk2H+pCl5I0i3df4mV/MGtk5BTKJTM4KYmsKyrjDj7m8B/R6FgfxpslP3d70F7tzNLXjz4kT0UkjY317Krv/TkNRJnadVMgaYGS3SbgpcawHB8UB/3pxksxXY6I/8pSdDHmOCdzehQaOd3sVxru4t9a6QCSEL/9Rubv8xiqHEAfkb7cIXHe4knKQKr77S+mY3w3oQXNLu47Umo3ZM42M8k+VLa8YI5SM0MNFqfVP/cBpdAQOScN18mnxFPiY8OK9liEsV9g4UMpd6U+r7IWJC6++5v8Iw7U9wKNGj2m97gydxqVH//Au/XWiMrsnWDrBY5malDSDzhsS8xhujA/8HLNpnPryr7lBjPvl2fVxj1grSlhr2mcJM225WjpfXBv8FETDhViW7BPKDpPwvy4o9VBTCAAxnVzkc700s2psgTcKJ/yRJ2ZbXw15qJoMB4dfLO0uNBkNBgWkPQOG7ZIHG4EjJj6XBi8vN2I+vSUeL7mfxWPV8g5M7w5HpQGLGcXK/C4bEi0CsMLPpL0rLGvKgPvD9uw/cVcjQanhhV30UHIbJ7bgXlb148+AXVR1AUvFjycbgkmTcfpWgEI5lFYty1Aw7Kq4YZYaEG6bxzPvKXanIQKSvxSO5leCM6bnKCqIak756XKb7U9CGlhle4deuomggfoOEQxaltsnid6XCCk0aJWqKFt3c7plkhNUXLAKjSd1mrin/2iw/ZgpFwgUAvlB54TTT0/Wx9D8B7ayjTn27snfg8PLJ3y1YpkqFQXj2/qy6RE2JcJuJ/O7OHeZphCI+taEygYbdO+lrrL2mE9zuTVr24VC0R4K+1FSpkGVcJ1qXq/cl3yPsR1+TZt7z1YyFqKdRqtCgRrzq/edbDqLhehZkU9UXwcmT0l7KFhD59Pq6XoYIldl96319zPpB/f3sYD4t0PQfVCpk6Te4TiDgiR11PlQnjsPNcyyk0FTqSw3xarWJrKvW1L5B46GsGvcRWs/Xrorlm8ddkJAnNUFXUVKa0YlvamK+awsZEUWKstIElnx94PPN2Gd/N4mYCU30S94+qH3cH+l7Z1OJR1beTyrcahMrYphoqEigUf9X9JGOAG5F8ZLgbcCBGn01o+4j2J32bRa5JyGqTuGjqi3EfD0FxtF0RtOwflvAo4qxmqkKFm7bZLVmxPOTz39vKhIIVvK2LB1gvyEAksQbEUIEPeLtCpWlpQ5bP+RYmfuvYiiqDIcLktQOhf29EGSorEpjiK6KyQHLW/T9hiu4pCIHPFOn0BjKqMeLEh7f9y3O9QmpfKijUTd3qgntoZAE6fG2qFL5KbYwJgMFW7sz6Nv2JFqAEAbEKoehwUttpvAE72Z1rHQXqZocpvTjyqYUCXCqViANGJWORGAmD8kogruvh6qmFIlCFKquQhnGBILKBqLKCkYO1k8rUci3Ckp6KKmItG7gGPWowtwtdst44jLopru/Sp4esn1er+U8U9oPq7IiVOlJ9yT6SLw4fwNIeT1/J7FLKqiXAjIo78HnIKpgIqU8J92jMVqJLsdfDXpTuiSzj2PYs27ZCRzL2Eo9L6M+8NO6t3pT8seE26X5mYxg5ENkqfY4yekDNFQsSpbHvJrdYo/lIMXhMX0LffmPNZ/AzuahbrD+TynzDbgu84wM58fvTvBQpzwEk8F/FStM6ux+vVQ387JiW2Q2YYwhVL1Iw5cQrPT5ptLM2GBJTYmZm2V2H5i4Eq04wOlD8eXkboA60pJPqmmF7KmnkrBozl2qI+VMS81o8KR0gezRhNKwyFJxlbSQxbUnBggoxGVOKjK88uo1cFSFQJqVxuVItJCCY2guoFbeciJ1M+Wfacbv6I0Sf6o4JMKhV8Xxezy5cJfqq8MW6TZ3b2qJJMfTMInqFCZ9Y/VuVHIUZvqOukulYxGo24l4Me4rVjoO4bj80kUO1ne8hcqggbqVxHpj97QW/Wr3n9WlqPGM36raE2lrhjuISbbVTeZ0CuDHezndMxjG3I57Z3GJAz+NmrTz/UTpD8NdX7XkZAGQzyiqV7gdI631PIYo66QipyQloKiSdPQUduvjNfJXGBMZBZz0IKrKLXjYALsRzCZ/IyDmcSwWJ849FF4qtfyX5hu2gKBLBaQr+9wSQTJ34BiTjYQMAEk/mEUCicb6EIsKBKnAO+mfOagd3UUo40ETyYcjyYGfGD+bHzm1+lLYs+7AhNF9eNFDvM4SyzCgBZd3Fwcpjv3+FhceI3U18JPNl6rPZPLQ8TeJVkn/FE5kVusqir97ahJy8xk7+GqvhPsnn5vQMDirYvw5udOIv+UwwfpXCNlZGIIhnv+D4+qcqLP/Ax8mttsZRKFw/EuxTIQHbjUu1ElX7bN724bt1Tvrtw2GJGufkBX50fLPncqGoPtPJ2gmy/YPD0Fn8fsz2rDlbWsrTsZUAg/TmlMVJQtv4WOC481mE2MKgYjw2CyaX+eAbf7AVnVBojWMCVsjMa1s5TfdRcsOpRE3YLiutGjI6c9zn9NQyMX2BLsDbDhoxT6HpPoQ703amG2cTT+J4vYqBcgptJgHHUs/4fFWvA+mMTPVbfUmkL426e0WwtHs20FLFUKzMyy4rTRXqQLUfvNJiXtGL8KlMwiUtlPUw0C87N+bPoYXfIZQzJDssX52AGGQ6LufPprhvsxjeGOuzX0MgfH8JZF3tx+SFwzYxtJbBFoEh9GilWW394vdX4/ZJ6VtLXPEYMlJWGmeAAjEm7d1VStm12O3Pobt1VZlctiCtS8v3cLMKsRsv2Y0mjUrnuFeTjqA3NZk+sunxiQgC+NbL8QTOsA+CA9iv9sbsGNf7rtj5sm31HOfJuveuN0NaWZOctA0PXxu/+x9LTqtvanf3fqXHbXcrN9J1oI9txl0OpPF4+OI8/i4mHQ6/VbD9bY+xbnL0FDIoRd0kg286Sdr2hz++yJF/wcGzCh094cCsjX//O8UNUij0Wg0Go1Go9FoNBqNRqPRaDQajUaj0Wg0Go1Go9FoNBrNHfA/QCaw6mX55dcAAAAASUVORK5CYII=" width="30%"></div>
-                    <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfN1g3t0ykmJublLVG0cXyNCvkVi5qO8K8aA&usqp=CAU" width="30%"></div>
-                    <div><img class="img_insta" src="https://cdn.icon-icons.com/icons2/2037/PNG/512/ig_instagram_media_social_icon_124260.png" width="15%"></div>
-                </div>
-
-                <div class="img_foo">
-                    <img class="icono_item_carac" src="https://www.flaticon.es/svg/static/icons/svg/3744/3744548.svg">
-                    <p>Cuida a los animales</p>
-                </div>
-
-                <div class="txt_foo_copy">
-                    <p class="txt_copy">© 2020 Ceci Suárez Zaldívar. <br>All Rights Reserved</p>
                 </div>
 
             </div>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 footer_seccion2">
+               
+               
+                <div class="col logo-foo">
+                    <img src="https://i.ibb.co/GtVtQnX/icono-pit.png" width="15%">
+                    <img src="https://i.ibb.co/R7jDCh2/txt-pit.png" width="25%">
+                </div>
+
+                <div class="col redes_sociales">
+                    <img class="img_redes" src="https://www.flaticon.es/svg/static/icons/svg/1384/1384178.svg">
+                    <img class="img_redes" src="https://www.flaticon.es/svg/static/icons/svg/747/747543.svg">
+                    <img class="img_redes" src="https://www.flaticon.es/svg/static/icons/svg/1384/1384174.svg">
+                    <img class="img_redes" src="https://www.flaticon.es/svg/static/icons/svg/3046/3046113.svg">
+                    <img class="img_redes" src="https://www.flaticon.es/svg/static/icons/svg/1384/1384172.svg">
+                </div>
+
+
+                <div class="col cuida_animal">
+                    <img class="icono_foo" src="https://www.flaticon.es/svg/static/icons/svg/3744/3744548.svg">
+                    <p class="txt_cuida">Cuida a los animales</p>
+                </div>
+
+                <div class="col derechos_reservados">
+                    <p class="txt_copy">© 2020 Ceci Suárez Zaldívar. <br> All Rights Reserved</p>
+                </div>
+
+                
+
+
+            </div>
+
+
 
         </footer>
+       
+
+        <!--Al último Script, antes de cerrar body-->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous">
+        </script>
+
+        <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous">
+        </script>
+
+        <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous">
+        </script>
 
        
     </body>
